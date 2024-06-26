@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "vuepress-plugin-netlify-functions": [
+        "./packages/plugin-netlify-functions/src/node/index.ts"
+      ]
+    },
+    "types": ["webpack-env", "vuepress/client-types"]
+  },
+  "include": [
+    "packages/**/*"
+  ],
+  "exclude": ["**/node_modules/**", "**/.cache/**", "**/.temp/**", "**/lib/**", "**/dist/**"]
+}
